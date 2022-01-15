@@ -31,7 +31,7 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(29, 26, 24);
-  padding: 0 2rem;
+  padding: 0 5%;
 }
 
 #logo:link,
@@ -70,10 +70,11 @@ main h1 {
 
 #latest-products {
   width: 80%;
-  margin: 5rem auto;
+  margin: 3.2rem auto;
 }
 
 #latest-products > ul {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
@@ -112,4 +113,15 @@ main h1 {
 .food-item-content a:hover,
 .food-item-content a:active {
   background-color: rgb(221, 134, 34);
+}
+
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+
+@media (max-width: 48em) {
+  /* 768px */
+  #latest-products > ul {
+    grid-template-columns: 1fr;
+  }
 }
