@@ -62,6 +62,18 @@ a:visited {
   color: rgb(228, 163, 44);
 }
 
+.menu-btn:link,
+.menu-btn:visited {
+  display: none;
+}
+
+.menu-btn span {
+  /* display: block; */
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
 main {
   padding-top: 3.2rem;
 }
@@ -128,6 +140,16 @@ main h1 {
   #main-header nav {
     display: none;
   }
+
+  .menu-btn:link,
+  .menu-btn:visited {
+    display: flex;
+    width: 4.8rem;
+    height: 2.4rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   main h1 {
     font-size: 2.4rem;
   }
